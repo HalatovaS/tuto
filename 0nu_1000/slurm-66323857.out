@@ -1,0 +1,78 @@
+**********************************************************************
+*                         SLURM Batch System                         *
+*              IN2P3 Computing Centre, Villeurbanne FR               *
+**********************************************************************
+* Date:                 Fri Jul 11 12:54:01 PM CEST 2025
+* Job name:             0nu_Se82_1000_job
+* Job id:               66323857
+* User:                 ohalatova
+* Account:              nemo
+* Submit host:          cca015
+* Partition:            htc
+* Quality of service:   normal
+* Nodelist:             ccwslurm2019
+* Operating System:     Red Hat Enterprise Linux release 9.6 (Plow)
+* Architecture:         x86_64
+**********************************************************************
+[log] Entering SuperNEMO software common profile...
+[log] SuperNEMO software common profile is already loaded.
+[log] Exiting SuperNEMO software common profile...
+[log] load_core_pro_setup: RedHat Linux Version : 9.6
+[log] load_core_pro_setup: PATH starts from : /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/opt/ccin2p3/bin:/opt/dell/srvadmin/bin:.
+[log] load_core_pro_setup: LD_LIBRARY_PATH starts from : 
+[log] load_core_pro_setup: PKG_CONFIG_PATH starts from : 
+[log] load_core_pro_setup: Activating Modules...
+[log] Activating 'Modules'...
+[log] Modules Release 5.1.1 (2022-05-31) is activated
+[log] load_core_pro_setup: PATH is : /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/opt/ccin2p3/bin:/opt/dell/srvadmin/bin:.
+[log] load_git_2_43_5_setup: Setting git 2.43.5...
+[log] load_git_2_43_5_setup: Using git from RHEL system...
+[warning] load_git_2_43_5_setup: Found a unexpected non system installation of git (location=/pbs/software/redhat-9-x86_64/git/2.44.0/bin/git)
+[warning] load_git_2_43_5_setup: Unexpected git version 2.44.0 was found (expected 2.43.5)
+[log] load_gcc_11_setup: Setting gcc 11...
+[log] load_gcc_11_setup: Using system gcc 11...
+[log] load_gcc_11_setup: CC : /usr/bin/gcc
+[log] load_gcc_11_setup: CXX : /usr/bin/g++
+[log] load_gcc_11_setup: gcc version 11 is setup.
+[log] load_ninja_1_12_1_setup: Setting ninja 1.12.1...
+[log] load_ninja_1_12_1_setup: Updated PATH = /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/opt/ccin2p3/bin:/opt/dell/srvadmin/bin:.
+[log] load_ninja_1_12_1_setup: ninja version 1.12.1 is setup.
+[log] load_cmake_3_26_5_setup: Setting cmake 3.26.5...
+[error] load_cmake_3_26_5_setup: Unexpected cmake version 3.29.2 was found!
+[error] _snswmgr_load_setupfile : Failed to run setup function 'load_cmake_3_26_5_setup'!
+[error] snswmgr_load_setup : Failed to setup 'cmake@3.26.5'!
+[error] _snswmgr_load_stackfile : Failed to load setup for 'cmake@3.26.5'!
+[error] snswmgr_load_stack : Failed to stack 'base@2024-09-04'!
+[error] _snswmgr_load_dependency : Could not load dependency stack 'base@2024-09-04'!
+[error] _snswmgr_load_stackfile : Failed to load stack dependency 'stack:base@2024-09-04' for stack 'falaise@5.1.2'!
+[error] snswmgr_load_stack : Failed to stack 'bayeux_build@2024-09-04'!
+[error] _snswmgr_load_dependency : Could not load dependency stack 'bayeux_build@2024-09-04'!
+[error] _snswmgr_load_stackfile : Failed to load stack dependency 'stack:base@2024-09-04' for stack 'falaise@5.1.2'!
+[error] snswmgr_load_stack : Failed to stack 'bayeux@2024-09-04'!
+[error] _snswmgr_load_dependency : Could not load dependency stack 'bayeux@2024-09-04'!
+[error] _snswmgr_load_stackfile : Failed to load stack dependency 'stack:base@2024-09-04' for stack 'falaise@5.1.2'!
+[error] snswmgr_load_stack : Failed to stack 'falaise_build@2024-09-04'!
+[error] _snswmgr_load_dependency : Could not load dependency stack 'falaise_build@2024-09-04'!
+[error] snswmgr_load_setup : Failed to load dependency 'core@pro' for software component 'falaise@5.1.2'!
+[log] load_cmake_3_26_5_setup: Setting cmake 3.26.5...
+[error] load_cmake_3_26_5_setup: Unexpected cmake version 3.29.2 was found!
+[error] _snswmgr_load_setupfile : Failed to run setup function 'load_cmake_3_26_5_setup'!
+[error] snswmgr_load_setup : Failed to setup 'cmake@3.26.5'!
+[error] _snswmgr_load_stackfile : Failed to load setup for 'cmake@3.26.5'!
+[error] snswmgr_load_stack : Failed to stack 'base@2024-09-04'!
+flsimulate : Variant service threw exception
+Cannot open input variant profile '/pbs/home/o/ohalatova/tutorial/0nu/Setup_0nu_Se82_1000.conf'
+terminate called after throwing an instance of 'std::logic_error'
+  what():  [void FLReconstruct::do_postprocess(FLReconstruct::FLReconstructParams&):668: Missing services configuration file!]
+/var/spool/slurmd/job66323857/slurm_script: line 25: 2781860 Aborted                 (core dumped) /sps/nemo/sw/redhat-9-x86_64/snsw/opt/falaise-5.1.2/bin/flreconstruct -i /pbs/home/o/ohalatova/tutorial/0nu/0nu_1000/Simu_0nu_Se82_new.brio -p $CONF_FAL/official-2.0.0.conf -o /pbs/home/o/ohalatova/tutorial/0nu/0nu_1000/Reco_0nu_Se82_new.brio
+****************************************************************
+*                      SLURM Batch System                      *
+*           IN2P3 Computing Centre, Villeurbanne FR            *
+****************************************************************
+Date: Fri Jul 11 12:54:19 PM CEST 2025
+Job informations can be found using these commands:
+Accounting:
+sacct -j 66323857
+Efficiency:
+seff 66323857
+****************************************************************
