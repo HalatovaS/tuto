@@ -23,3 +23,5 @@ CONF_FAL="/sps/nemo/sw/Falaise/install_develop/share/Falaise-4.1.0/resources/sne
 # CONF_FAL = "path to my Falaise configuration file"
 
 /sps/nemo/sw/redhat-9-x86_64/snsw/opt/falaise-5.1.2/bin/flreconstruct -i /pbs/home/o/ohalatova/tutorial/Bi214/Simu_Bi214_new.brio -p $CONF_FAL/official-2.0.0.conf -o /pbs/home/o/ohalatova/tutorial/Bi214/Reco_Bi214_new.brio
+
+/sps/nemo/sw/redhat-9-x86_64/snsw/opt/falaise-5.1.2/bin/flreconstruct -i /pbs/home/o/ohalatova/tutorial/Bi214/Reco_Bi214_new.brio -p /pbs/home/o/ohalatova/MiModule/p_MiModule_v00.conf
